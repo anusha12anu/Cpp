@@ -1,9 +1,14 @@
-#include <iostream> // Includes the input-output library
-
+#include <iostream>
+using namespace std;
 int main() {
-    // Prints text to the screen followed by a new line
-    std::cout << "Hello, World!" << std::endl; 
-    
-    return 0; // Signals that the program ran successfully
+    float p, r, t, si;
+    cout << "Enter Principal: ";
+    cin >> p;
+    cout << "Enter Rate: ";
+    cin >> r;
+    cout << "Enter Time: ";
+    cin >> t;
+    si = (p * r * t) / 100;
+    cout << "Simple Interest = " << si;
+    return 0;
 }
-
